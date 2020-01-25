@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ti0-iE-6dc">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Settings-->
+        <scene sceneID="9lX-zC-bwb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="xax-6x-sdb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4t-g2-q4C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dvA-6x-NcS"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="GX4-lc-dai"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JY1-ij-ocV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1054" y="861"/>
+        </scene>
+        <!--Book-->
+        <scene sceneID="Ye1-yg-nEP">
+            <objects>
+                <viewController id="Pw3-KJ-4dy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KU0-Kz-jbG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="wDC-ba-yyE">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="56"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wDC-ba-yyE" firstAttribute="top" secondItem="1zK-5o-gTa" secondAttribute="top" id="7Lb-90-UI0"/>
+                            <constraint firstItem="1zK-5o-gTa" firstAttribute="trailing" secondItem="wDC-ba-yyE" secondAttribute="trailing" id="AGB-Ob-3ff"/>
+                            <constraint firstItem="wDC-ba-yyE" firstAttribute="leading" secondItem="1zK-5o-gTa" secondAttribute="leading" id="dh7-89-jXO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1zK-5o-gTa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Book" image="book" catalog="system" id="UIb-gW-q3T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NwJ-Iq-gSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="426"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="TJx-TF-Dm6">
+            <objects>
+                <viewController id="oa2-5a-OwK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zYu-Eq-2Gx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BeF-cb-qR3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="1bb-dn-H0Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XvW-xI-3ql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="-221"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sUh-FQ-N5g">
+            <objects>
+                <tabBarController id="Ti0-iE-6dc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="hY5-IQ-g71">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oa2-5a-OwK" kind="relationship" relationship="viewControllers" id="7r2-pN-Md2"/>
+                        <segue destination="Pw3-KJ-4dy" kind="relationship" relationship="viewControllers" id="yY7-WY-he5"/>
+                        <segue destination="xax-6x-sdb" kind="relationship" relationship="viewControllers" id="8Ce-rz-IgF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZy-iY-q6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+    </resources>
 </document>
